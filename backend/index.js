@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 4000;
 connectDB();
 
 // middlewares
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
+const allowedOrigins = ["http://localhost:5173", "http://localhost:5174","https://book-store-3hf8a2w7d-viswanadhs-projects-c3b1f5f2.vercel.app",];
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
